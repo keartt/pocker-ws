@@ -1,0 +1,25 @@
+{
+  "name": "river-poker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"node --watch server/index.js\" \"vite --host 0.0.0.0\"",
+    "build": "vite build",
+    "test": "node --test",
+    "start": "node server/index.js",
+    "test:socket": "node scripts/socket-check.js"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "three": "^0.180.0",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "vite": "^7.0.0",
+    "concurrently": "^9.2.0"
+  }
+}
